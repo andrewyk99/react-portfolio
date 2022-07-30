@@ -42,7 +42,6 @@ body {
 }
 
 /* ============================ General Styles ============================ */
-
 .container {
     width: var(--container-width-lg);
     margin: 0 auto;
@@ -112,7 +111,6 @@ img {
 }
 
 /* ============================ Media Queries (Medium Devices) ============================ */
-
 @media screen and (max-width: 1024px) {
     .container {
         width: var(--container-width-md);
@@ -124,7 +122,6 @@ img {
 }
 
 /* ============================ Media Queries (Small Devices) ============================ */
-
 @media screen and (max-width: 600px) {
     .container {
         width: var(--container-width-sm);
