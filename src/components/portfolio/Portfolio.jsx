@@ -1,9 +1,9 @@
 import React from 'react';
 import './portfolio.css';
-import IMG1 from '../../assets/images/portfolio1.jpg';
-import IMG2 from '../../assets/images/portfolio2.jpg';
-import IMG3 from '../../assets/images/portfolio3.jpg';
-import IMG4 from '../../assets/images/portfolio4.jpg';
+import IMG1 from '../../assets/images/projects/search-books-ss.png';
+import IMG2 from '../../assets/images/projects/budget-tracker.png';
+import IMG3 from '../../assets/images/projects/maecenas-devs.png';
+import IMG4 from '../../assets/images/projects/tech-blog.png';
 import IMG5 from '../../assets/images/portfolio5.png';
 import IMG6 from '../../assets/images/portfolio6.jpg';
 
@@ -11,45 +11,31 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Project 1',
-    github: 'https://github.com/',
-    demo: 'https://liveapplication.com'
+    title: 'Book Search Engine',
+    github: 'https://github.com/andrewyk99/budget-tracker',
+    demo: 'https://salty-sea-41217.herokuapp.com/'
   },
   {
     id: 2,
     image: IMG2,
-    title: 'Project 2',
+    title: 'Budget Tracker',
     github: 'https://github.com/',
     demo: 'https://liveapplication.com'
   },
   {
     id: 3,
     image: IMG3,
-    title: 'Project 3',
-    github: 'https://github.com/',
-    demo: 'https://liveapplication.com'
+    title: 'Maecenas Devs',
+    github: 'https://github.com/andrewyk99/Maecenas-Devs',
+    demo: 'https://gentle-citadel-11319.herokuapp.com/'
   },
   {
     id: 4,
     image: IMG4,
-    title: 'Project 4',
-    github: 'https://github.com/',
-    demo: 'https://liveapplication.com'
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Project 1',
-    github: 'https://github.com/',
-    demo: 'https://liveapplication.com'
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Project 6',
-    github: 'https://github.com/',
-    demo: 'https://liveapplication.com'
-  },
+    title: 'Tech Blog',
+    github: 'https://github.com/andrewyk99/tech-blog',
+    demo: 'https://lit-lake-35991.herokuapp.com/'
+  }
 ]
 
 const Portfolio = () => {
