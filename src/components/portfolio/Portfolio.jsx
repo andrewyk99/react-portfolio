@@ -1,11 +1,11 @@
 import React from 'react';
+import { useState } from 'react';
 import './portfolio.css';
+import Modal from '../modals/Modal';
 import IMG1 from '../../assets/images/projects/search-books-ss.png';
 import IMG2 from '../../assets/images/projects/budget-tracker.png';
 import IMG3 from '../../assets/images/projects/maecenas-devs.png';
 import IMG4 from '../../assets/images/projects/tech-blog.png';
-import IMG5 from '../../assets/images/portfolio5.png';
-import IMG6 from '../../assets/images/portfolio6.jpg';
 
 const data = [
   {
@@ -39,6 +39,8 @@ const data = [
 ]
 
 const Portfolio = () => {
+  const [openModal, modalOne] = useState(false)
+
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
@@ -48,7 +50,8 @@ const Portfolio = () => {
         {
           data.map(({id, image, title, github, demo}) => {
             return (
-              <article key={id} className='portfolio__item'>
+              <div>
+              <button key={id} className='portfolio__item' onClick={() => modalOne(true)}>
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
                 </div>
@@ -57,8 +60,10 @@ const Portfolio = () => {
                   <a href={github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
                   <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
                 </div>
-              </article>
-            )
+              </button>
+              {openModal && <Modal closeModal={modalOne} title={title} />}
+              </div>
+              )
           })
         }
       </div>
