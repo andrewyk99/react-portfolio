@@ -12,15 +12,15 @@ const data = [
     id: 1,
     image: IMG1,
     title: 'Book Search Engine',
-    github: 'https://github.com/andrewyk99/budget-tracker',
+    github: 'https://github.com/andrewyk99/book-search-engine',
     demo: 'https://salty-sea-41217.herokuapp.com/'
   },
   {
     id: 2,
     image: IMG2,
     title: 'Budget Tracker',
-    github: 'https://github.com/',
-    demo: 'https://liveapplication.com'
+    github: 'https://github.com/andrewyk99/budget-tracker',
+    demo: 'https://salty-sea-41217.herokuapp.com/'
   },
   {
     id: 3,
@@ -38,7 +38,7 @@ const data = [
   }
 ]
 
-const Portfolio = () => {
+const Portfolio = (id, image, title, github, demo) => {
   const [openModal, modalOne] = useState(false)
 
   return (
@@ -47,25 +47,65 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {
-          data.map(({id, image, title, github, demo}) => {
-            return (
-              <div>
-              <button key={id} className='portfolio__item' onClick={() => modalOne(true)}>
-                <div className="portfolio__item-image">
-                  <img src={image} alt={title} />
-                </div>
-                <h3>{title}</h3>
-                <div className="portfolio__item-cta">
-                  <a href={github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
-                  <a href={demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
-                </div>
-              </button>
-              {openModal && <Modal closeModal={modalOne} title={title} />}
-              </div>
-              )
-          })
-        }
+        {/* Project 1 */}
+        <div>
+          <button className='portfolio__item' onClick={() => modalOne(true)}>
+            <div className="portfolio__item-image">
+              <img src={data[0].image} alt={data[0].title} />
+            </div>
+            <h3>{data[0].title}</h3>
+            <div className="portfolio__item-cta">
+              <a href={data[0].github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
+              <a href={data[0].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </button>
+          {openModal && <Modal closeModal={modalOne} />}
+        </div>
+
+        {/* Project 2 */}
+        <div>
+          <button className='portfolio__item' onClick={() => modalOne(true)}>
+            <div className="portfolio__item-image">
+              <img src={data[1].image} alt={data[1].title} />
+            </div>
+            <h3>{data[1].title}</h3>
+            <div className="portfolio__item-cta">
+              <a href={data[1].github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
+              <a href={data[1].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </button>
+          {openModal && <Modal closeModal={modalOne} />}
+        </div>
+
+        {/* Project 3 */}
+        <div>
+          <button className='portfolio__item' onClick={() => modalOne(true)}>
+            <div className="portfolio__item-image">
+              <img src={data[2].image} alt={data[2].title} />
+            </div>
+            <h3>{data[2].title}</h3>
+            <div className="portfolio__item-cta">
+              <a href={data[2].github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
+              <a href={data[2].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </button>
+          {openModal && <Modal closeModal={modalOne} />}
+        </div>
+
+        {/* Project 4 */}
+        <div>
+          <button className='portfolio__item' onClick={() => modalOne(true)}>
+            <div className="portfolio__item-image">
+              <img src={data[3].image} alt={data[3].title} />
+            </div>
+            <h3>{data[3].title}</h3>
+            <div className="portfolio__item-cta">
+              <a href={data[3].github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
+              <a href={data[3].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </button>
+          {openModal && <Modal closeModal={modalOne} />}
+        </div>
       </div>
     </section>
   )
