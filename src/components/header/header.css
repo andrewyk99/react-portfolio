@@ -61,8 +61,12 @@ header {
 
 /* ============================ Media Queries (Medium Devices) ============================ */
 @media screen and (max-width: 1024px) {
-    header {
-        height: 68vh;
+    .header__socials {
+        height: 15rem;
+    }
+
+    .scroll__down {
+        bottom: 14rem;
     }
 }
 

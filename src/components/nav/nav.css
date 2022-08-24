@@ -16,7 +16,7 @@ nav {
 
 nav a {
     background: transparent;
-    padding: 1.1rem;
+    padding: 1.2rem;
     border-radius: 50%;
     display: flex;
     color: var(--color-light);
@@ -35,12 +35,12 @@ nav a.active {
 /* ============================ Media Queries (Medium Devices) ============================ */
 @media screen and (max-width: 1024px) {
     nav {
-        gap: 2.5rem
+        gap: 1rem
     }
 
     nav a {
-        padding: 1.5rem;
-        font-size: 1.5rem;
+        padding: 1.1rem;
+        font-size: 1.1rem;
     }
 }
 
