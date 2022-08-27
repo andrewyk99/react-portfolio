@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import './portfolio.css';
-import Modal from '../modals/Modal';
+import {ModalOne, ModalTwo, ModalThree, ModalFour} from '../modals/Modal';
 import IMG1 from '../../assets/images/projects/search-books-ss.png';
 import IMG2 from '../../assets/images/projects/budget-tracker.png';
 import IMG3 from '../../assets/images/projects/maecenas-devs.png';
@@ -39,7 +39,10 @@ const data = [
 ]
 
 const Portfolio = () => {
-  const [openModal, modalOne] = useState(false)
+  const [openModalOne, setModalOne] = useState(false)
+  const [openModalTwo, setModalTwo] = useState(false)
+  const [openModalThree, setModalThree] = useState(false)
+  const [openModalFour, setModalFour] = useState(false)
 
   return (
     <section id='portfolio'>
@@ -49,7 +52,7 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {/* Project 1 */}
         <div>
-          <button className='portfolio__item' onClick={() => modalOne(true)}>
+          <button className='portfolio__item' onClick={() => setModalOne(true)}>
             <div className="portfolio__item-image">
               <img src={data[0].image} alt={data[0].title} />
             </div>
@@ -59,12 +62,12 @@ const Portfolio = () => {
               <a href={data[0].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModal && <Modal closeModal={modalOne} />}
+          {openModalOne && <ModalOne closeModalOne={setModalOne} />}
         </div>
 
         {/* Project 2 */}
         <div>
-          <button className='portfolio__item' onClick={() => (true)}>
+          <button className='portfolio__item' onClick={() => setModalTwo(true)}>
             <div className="portfolio__item-image">
               <img src={data[1].image} alt={data[1].title} />
             </div>
@@ -74,12 +77,12 @@ const Portfolio = () => {
               <a href={data[1].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModal && <Modal closeModal={modalOne} />}
+          {openModalTwo && <ModalTwo closeModalTwo={setModalTwo} />}
         </div>
 
         {/* Project 3 */}
         <div>
-          <button className='portfolio__item' onClick={() => modalOne(true)}>
+          <button className='portfolio__item' onClick={() => setModalThree(true)}>
             <div className="portfolio__item-image">
               <img src={data[2].image} alt={data[2].title} />
             </div>
@@ -89,12 +92,12 @@ const Portfolio = () => {
               <a href={data[2].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModal && <Modal closeModal={modalOne} />}
+          {openModalThree && <ModalThree closeModalThree={setModalThree} />}
         </div>
 
         {/* Project 4 */}
         <div>
-          <button className='portfolio__item' onClick={() => modalOne(true)}>
+          <button className='portfolio__item' onClick={() => setModalFour(true)}>
             <div className="portfolio__item-image">
               <img src={data[3].image} alt={data[3].title} />
             </div>
@@ -104,7 +107,7 @@ const Portfolio = () => {
               <a href={data[3].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModal && <Modal closeModal={modalOne} />}
+          {openModalFour && <ModalFour closeModalFour={setModalFour} />}
         </div>
       </div>
     </section>

@@ -35,11 +35,11 @@ const data = [
     }
 ]
 
-function Modal({ closeModal }) {
+function ModalOne({ closeModalOne }) {
   return (
     <div className='modal__background'>
         <div className='modal__container'>
-            <button onClick={() => closeModal(false)}> X </button>
+            <button onClick={() => closeModalOne(false)}> X </button>
             <div className='title'>
                 <h1>{data[0].title}</h1>
             </div>
@@ -55,4 +55,64 @@ function Modal({ closeModal }) {
   )
 }
 
-export default Modal
+function ModalTwo({ closeModalTwo }) {
+  return (
+    <div className='modal__background'>
+        <div className='modal__container'>
+            <button onClick={() => closeModalTwo(false)}> X </button>
+            <div className='title'>
+                <h1>{data[1].title}</h1>
+            </div>
+            <div className='body'>
+                <img src={data[1].image} alt={data[1].title} />
+            </div>
+            <div className='footer'>
+                <a href={data[1].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+                <a href={data[1].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+function ModalThree({ closeModalThree }) {
+  return (
+    <div className='modal__background'>
+        <div className='modal__container'>
+            <button onClick={() => closeModalThree(false)}> X </button>
+            <div className='title'>
+                <h1>{data[2].title}</h1>
+            </div>
+            <div className='body'>
+                <img src={data[2].image} alt={data[2].title} />
+            </div>
+            <div className='footer'>
+                <a href={data[2].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+                <a href={data[2].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+function ModalFour({ closeModalFour }) {
+  return (
+    <div className='modal__background'>
+        <div className='modal__container'>
+            <button onClick={() => closeModalFour(false)}> X </button>
+            <div className='title'>
+                <h1>{data[3].title}</h1>
+            </div>
+            <div className='body'>
+                <img src={data[3].image} alt={data[3].title} />
+            </div>
+            <div className='footer'>
+                <a href={data[3].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+                <a href={data[3].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+            </div>
+        </div>
+    </div>
+  )
+}
+
+export {ModalOne, ModalTwo, ModalThree, ModalFour};
