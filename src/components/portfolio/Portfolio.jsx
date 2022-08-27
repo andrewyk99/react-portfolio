@@ -38,7 +38,7 @@ const data = [
   }
 ]
 
-const Portfolio = (id, image, title, github, demo) => {
+const Portfolio = () => {
   const [openModal, modalOne] = useState(false)
 
   return (
@@ -64,7 +64,7 @@ const Portfolio = (id, image, title, github, demo) => {
 
         {/* Project 2 */}
         <div>
-          <button className='portfolio__item' onClick={() => modalOne(true)}>
+          <button className='portfolio__item' onClick={() => (true)}>
             <div className="portfolio__item-image">
               <img src={data[1].image} alt={data[1].title} />
             </div>
