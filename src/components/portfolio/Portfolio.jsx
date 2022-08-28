@@ -62,7 +62,6 @@ const Portfolio = () => {
               <a href={data[0].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModalOne && <ModalOne closeModalOne={setModalOne} />}
         </div>
 
         {/* Project 2 */}
@@ -77,7 +76,6 @@ const Portfolio = () => {
               <a href={data[1].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModalTwo && <ModalTwo closeModalTwo={setModalTwo} />}
         </div>
 
         {/* Project 3 */}
@@ -92,7 +90,6 @@ const Portfolio = () => {
               <a href={data[2].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModalThree && <ModalThree closeModalThree={setModalThree} />}
         </div>
 
         {/* Project 4 */}
@@ -107,9 +104,13 @@ const Portfolio = () => {
               <a href={data[3].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
             </div>
           </button>
-          {openModalFour && <ModalFour closeModalFour={setModalFour} />}
         </div>
       </div>
+
+      {openModalOne && <ModalOne closeModalOne={setModalOne} />}
+      {openModalTwo && <ModalTwo closeModalTwo={setModalTwo} />}
+      {openModalThree && <ModalThree closeModalThree={setModalThree} />}
+      {openModalFour && <ModalFour closeModalFour={setModalFour} />}
     </section>
   )
 }

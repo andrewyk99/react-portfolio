@@ -1,4 +1,5 @@
 import React from 'react'
+import './modal.css'
 import IMG1 from '../../assets/images/projects/search-books-ss.png';
 import IMG2 from '../../assets/images/projects/budget-tracker.png';
 import IMG3 from '../../assets/images/projects/maecenas-devs.png';
@@ -37,80 +38,97 @@ const data = [
 
 function ModalOne({ closeModalOne }) {
   return (
-    <div className='modal__background'>
-        <div className='modal__container'>
-            <button onClick={() => closeModalOne(false)}> X </button>
-            <div className='title'>
-                <h1>{data[0].title}</h1>
-            </div>
-            <div className='body'>
-                <img src={data[0].image} alt={data[0].title} />
-            </div>
-            <div className='footer'>
-                <a href={data[0].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-                <a href={data[0].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
-            </div>
+    <div className='modal'>
+      <div className='modal__background' onClick={() => closeModalOne(false)}></div>
+      <div className='modal__container'>
+        <div className='title'>
+          <h1>{data[0].title}</h1>
         </div>
+        <div className='body'>
+          <img src={data[0].image} alt={data[0].title} />
+        </div>
+        <div className='footer'>
+          <a href={data[0].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+          <a href={data[0].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+        </div>
+      </div>
     </div>
   )
 }
 
 function ModalTwo({ closeModalTwo }) {
   return (
-    <div className='modal__background'>
-        <div className='modal__container'>
-            <button onClick={() => closeModalTwo(false)}> X </button>
-            <div className='title'>
-                <h1>{data[1].title}</h1>
-            </div>
-            <div className='body'>
-                <img src={data[1].image} alt={data[1].title} />
-            </div>
-            <div className='footer'>
-                <a href={data[1].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-                <a href={data[1].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
-            </div>
+    <div className='modal'>
+      <div className="modal__background" onClick={() => closeModalTwo(false)}></div>
+      <div className='modal__container'>
+        <div className='title'>
+            <h1>{data[1].title}</h1>
         </div>
+        <div className='body'>
+            <img src={data[1].image} alt={data[1].title} />
+        </div>
+        <p>
+          A book search engine that allows the user to create an account, search, and save any books they wish.
+        </p>
+        <div>
+          <h2>Highlights</h2>
+          <li>
+            <ul>Blah blah</ul>
+            <ul>blah blah</ul>
+          </li>
+        </div>
+        <div>
+          <h2>Tools Used</h2>
+          <li>
+            <ul>JavaScript</ul>
+            <ul>HTML</ul>
+          </li>
+        </div>
+        <div className='footer'>
+            <a href={data[1].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+            <a href={data[1].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+        </div>
+      </div>
     </div>
   )
 }
 
 function ModalThree({ closeModalThree }) {
   return (
-    <div className='modal__background'>
-        <div className='modal__container'>
-            <button onClick={() => closeModalThree(false)}> X </button>
-            <div className='title'>
-                <h1>{data[2].title}</h1>
-            </div>
-            <div className='body'>
-                <img src={data[2].image} alt={data[2].title} />
-            </div>
-            <div className='footer'>
-                <a href={data[2].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-                <a href={data[2].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
-            </div>
-        </div>
+    <div className='modal'>
+      <div className="modal__background" onClick={() => closeModalThree(false)}></div>
+      <div className='modal__container'>
+          <div className='title'>
+              <h1>{data[2].title}</h1>
+          </div>
+          <div className='body'>
+              <img src={data[2].image} alt={data[2].title} />
+          </div>
+          <div className='footer'>
+              <a href={data[2].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+              <a href={data[2].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+          </div>
+      </div>
     </div>
   )
 }
 
 function ModalFour({ closeModalFour }) {
   return (
-    <div className='modal__background'>
-        <div className='modal__container'>
-            <button onClick={() => closeModalFour(false)}> X </button>
-            <div className='title'>
-                <h1>{data[3].title}</h1>
-            </div>
-            <div className='body'>
-                <img src={data[3].image} alt={data[3].title} />
-            </div>
-            <div className='footer'>
-                <a href={data[3].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-                <a href={data[3].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
-            </div>
-        </div>
+    <div className='modal'>
+      <div className="modal__background" onClick={() => closeModalFour(false)}></div>
+      <div className='modal__container'>
+          <div className='title'>
+              <h1>{data[3].title}</h1>
+          </div>
+          <div className='body'>
+              <img src={data[3].image} alt={data[3].title} />
+          </div>
+          <div className='footer'>
+              <a href={data[3].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+              <a href={data[3].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+          </div>
+      </div>
     </div>
   )
 }
