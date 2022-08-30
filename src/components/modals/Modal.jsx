@@ -39,7 +39,11 @@ const data = [
 function ModalOne({ closeModalOne }) {
   return (
     <div className='modal'>
-      <div className='modal__background' onClick={() => closeModalOne(false)}></div>
+      <div className='modal__background' onClick={() => {
+        closeModalOne(false);
+        const body = document.body;
+        body.style.overflowY = '';
+      }}></div>
       <div className='modal__container'>
         <div className='title'>
           <h1>{data[0].title}</h1>
@@ -59,7 +63,11 @@ function ModalOne({ closeModalOne }) {
 function ModalTwo({ closeModalTwo }) {
   return (
     <div className='modal'>
-      <div className="modal__background" onClick={() => closeModalTwo(false)}></div>
+      <div className="modal__background" onClick={() => {
+        closeModalTwo(false);
+        const body = document.body;
+        body.style.overflowY = '';
+      }}></div>
       <div className='modal__container'>
         <div className='title'>
             <h1>{data[1].title}</h1>
@@ -96,7 +104,11 @@ function ModalTwo({ closeModalTwo }) {
 function ModalThree({ closeModalThree }) {
   return (
     <div className='modal'>
-      <div className="modal__background" onClick={() => closeModalThree(false)}></div>
+      <div className="modal__background" onClick={() => {
+        closeModalThree(false);
+        const body = document.body;
+        body.style.overflowY = '';
+      }}></div>
       <div className='modal__container'>
           <div className='title'>
               <h1>{data[2].title}</h1>
@@ -116,7 +128,11 @@ function ModalThree({ closeModalThree }) {
 function ModalFour({ closeModalFour }) {
   return (
     <div className='modal'>
-      <div className="modal__background" onClick={() => closeModalFour(false)}></div>
+      <div className="modal__background" onClick={() => {
+          closeModalFour(false);
+          const body = document.body;
+          body.style.overflowY = '';
+        }}></div>
       <div className='modal__container'>
           <div className='title'>
               <h1>{data[3].title}</h1>

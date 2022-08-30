@@ -43,6 +43,7 @@ const Portfolio = () => {
   const [openModalTwo, setModalTwo] = useState(false)
   const [openModalThree, setModalThree] = useState(false)
   const [openModalFour, setModalFour] = useState(false)
+  const body = document.body;
 
   return (
     <section id='portfolio'>
@@ -52,7 +53,10 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         {/* Project 1 */}
         <div>
-          <button className='portfolio__item' onClick={() => setModalOne(true)}>
+          <button className='portfolio__item' onClick={() => {
+            setModalOne(true);
+            body.style.overflowY = 'hidden';
+          }}>
             <div className="portfolio__item-image">
               <img src={data[0].image} alt={data[0].title} />
             </div>
@@ -66,7 +70,10 @@ const Portfolio = () => {
 
         {/* Project 2 */}
         <div>
-          <button className='portfolio__item' onClick={() => setModalTwo(true)}>
+          <button className='portfolio__item' onClick={() => {
+            setModalTwo(true);
+            body.style.overflowY = 'hidden';
+          }}>
             <div className="portfolio__item-image">
               <img src={data[1].image} alt={data[1].title} />
             </div>
@@ -80,7 +87,10 @@ const Portfolio = () => {
 
         {/* Project 3 */}
         <div>
-          <button className='portfolio__item' onClick={() => setModalThree(true)}>
+          <button className='portfolio__item' onClick={() => {
+              setModalThree(true);
+              body.style.overflowY = 'hidden';
+          }}>
             <div className="portfolio__item-image">
               <img src={data[2].image} alt={data[2].title} />
             </div>
@@ -94,7 +104,10 @@ const Portfolio = () => {
 
         {/* Project 4 */}
         <div>
-          <button className='portfolio__item' onClick={() => setModalFour(true)}>
+          <button className='portfolio__item' onClick={() => {
+            setModalFour(true);
+            body.style.overflowY = 'hidden';
+          }}>
             <div className="portfolio__item-image">
               <img src={data[3].image} alt={data[3].title} />
             </div>
