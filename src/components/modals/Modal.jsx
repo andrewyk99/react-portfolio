@@ -45,14 +45,35 @@ function ModalOne({ closeModalOne }) {
         body.style.overflowY = '';
       }}></div>
       <div className='modal__container'>
-        <div className='title'>
-          <h1>{data[0].title}</h1>
+        <div className="modal__wrap row">
+          <div className='title row'>
+            <h1>{data[0].title}</h1>
+          </div>
+          <div className='body row'>
+            <img classname='row' src={data[0].image} alt={data[0].title} />
+          </div>
+          <div className='about row'>
+            <p className='row'>A simple book search engine website that allows users to search any books and save them to view later.</p>
+            <div className='highlights'>
+              <div>
+                <h2 className='col-sm'>Highlights:</h2>
+                <ul>
+                  <ol>MERN application</ol>
+                  <ol>Back end Node and Express Server</ol>
+                </ul>
+              </div>
+              <div>
+                <h2 className='col-sm'>Tools Used:</h2>
+                <ul>
+                  <ol>React</ol>
+                  <ol>css</ol>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='body'>
-          <img src={data[0].image} alt={data[0].title} />
-        </div>
-        <div className='footer'>
-          <a href={data[0].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+        <div className='footer row'>
+          <a href={data[0].github} classname='btn-repo' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
           <a href={data[0].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
         </div>
       </div>
