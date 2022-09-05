@@ -73,8 +73,8 @@ function ModalOne({ closeModalOne }) {
           </div>
         </div>
         <div className='footer row'>
-          <a href={data[0].github} classname='btn-repo' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-          <a href={data[0].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+          <a href={data[0].github} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+          <a href={data[0].demo} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>Live Demo</a>
         </div>
       </div>
     </div>
@@ -90,32 +90,36 @@ function ModalTwo({ closeModalTwo }) {
         body.style.overflowY = '';
       }}></div>
       <div className='modal__container'>
-        <div className='title'>
-            <h1>{data[1].title}</h1>
+        <div className="modal__wrap row">
+          <div className='title row'>
+              <h1>{data[1].title}</h1>
+          </div>
+          <div className='body row'>
+            <img classname='row' src={data[1].image} alt={data[1].title} />
+          </div>
+          <div className='about row'>
+            <p className='row'>A simple book search engine website that allows users to search any books and save them to view later.</p>
+            <div className='highlights'>
+              <div>
+                <h2 className='col-sm'>Highlights:</h2>
+                <ul>
+                  <ol>MERN application</ol>
+                  <ol>Back end Node and Express Server</ol>
+                </ul>
+              </div>
+              <div>
+                <h2 className='col-sm'>Tools Used:</h2>
+                <ul>
+                  <ol>React</ol>
+                  <ol>css</ol>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        <div className='body'>
-            <img src={data[1].image} alt={data[1].title} />
-        </div>
-        <p>
-          A book search engine that allows the user to create an account, search, and save any books they wish.
-        </p>
-        <div>
-          <h2>Highlights</h2>
-          <li>
-            <ul>Blah blah</ul>
-            <ul>blah blah</ul>
-          </li>
-        </div>
-        <div>
-          <h2>Tools Used</h2>
-          <li>
-            <ul>JavaScript</ul>
-            <ul>HTML</ul>
-          </li>
-        </div>
-        <div className='footer'>
-            <a href={data[1].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-            <a href={data[1].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+        <div className='footer row'>
+          <a href={data[1].github} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+          <a href={data[1].demo} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>Live Demo</a>
         </div>
       </div>
     </div>
@@ -131,16 +135,37 @@ function ModalThree({ closeModalThree }) {
         body.style.overflowY = '';
       }}></div>
       <div className='modal__container'>
-          <div className='title'>
+        <div className="modal__wrap row">
+          <div className='title row'>
               <h1>{data[2].title}</h1>
           </div>
-          <div className='body'>
-              <img src={data[2].image} alt={data[2].title} />
+          <div className='body row'>
+              <img className='row' src={data[2].image} alt={data[2].title} />
           </div>
-          <div className='footer'>
-              <a href={data[2].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-              <a href={data[2].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+          <div className='about row'>
+            <p className='row'>A simple book search engine website that allows users to search any books and save them to view later.</p>
+            <div className='highlights'>
+              <div>
+                <h2 className='col-sm'>Highlights:</h2>
+                <ul>
+                  <ol>MERN application</ol>
+                  <ol>Back end Node and Express Server</ol>
+                </ul>
+              </div>
+              <div>
+                <h2 className='col-sm'>Tools Used:</h2>
+                <ul>
+                  <ol>React</ol>
+                  <ol>css</ol>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div>
+        <div className='footer row'>
+          <a href={data[2].github} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+          <a href={data[2].demo} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+        </div>
       </div>
     </div>
   )
@@ -155,16 +180,37 @@ function ModalFour({ closeModalFour }) {
           body.style.overflowY = '';
         }}></div>
       <div className='modal__container'>
-          <div className='title'>
+        <div className="modal__wrap row">
+          <div className='title row'>
               <h1>{data[3].title}</h1>
           </div>
-          <div className='body'>
+          <div className='body row'>
               <img src={data[3].image} alt={data[3].title} />
           </div>
-          <div className='footer'>
-              <a href={data[3].github} classname='btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
-              <a href={data[3].demo} className='btn btn-primary' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+          <div className='about row'>
+            <p className='row'>A simple book search engine website that allows users to search any books and save them to view later.</p>
+            <div className='highlights'>
+              <div>
+                <h2 className='col-sm'>Highlights:</h2>
+                <ul>
+                  <ol>MERN application</ol>
+                  <ol>Back end Node and Express Server</ol>
+                </ul>
+              </div>
+              <div>
+                <h2 className='col-sm'>Tools Used:</h2>
+                <ul>
+                  <ol>React</ol>
+                  <ol>css</ol>
+                </ul>
+              </div>
+            </div>
           </div>
+        </div>
+        <div className='footer row'>
+          <a href={data[3].github} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+          <a href={data[3].demo} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+        </div>
       </div>
     </div>
   )

@@ -65,6 +65,19 @@
     padding-top: 0.3rem;
 }
 
-.btn-repo {
-    background-color: black;
+.footer a {
+    color: var(--color-white);
+}
+
+.footer a:hover {
+    color: var(--color-white);
+    border: var(--color-prim);
+}
+
+.footer .btn:hover {
+    background-color: var(--color-prim);
+}
+
+.modal__btn {
+    background-color: var(--color-bg);
 }
