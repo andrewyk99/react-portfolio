@@ -57,8 +57,11 @@ function ModalOne({ closeModalOne }) {
             <div className='highlights row'>
               <div className='col center-align'>
                 <h2>Highlights:</h2>
-                <li>MERN application</li>
-                <li>Back end Node and Express Server</li>
+                <li>Full MERN stack</li>
+                <li>Functional PWA</li>
+                <li>Integration with databases</li>
+                <li>Bcrypt Authentication</li>
+                <li>Flexable integration of Bootstrap</li>
               </div>
               <div className='col center-align'>
                 <h2>Tools Used:</h2>
