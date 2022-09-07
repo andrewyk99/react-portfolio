@@ -33,13 +33,17 @@
 
 .modal__wrap .title {
     text-align: center;
-    margin-top: 10px;
     color: var(--color-bg)
 }
 
 .modal__wrap .body {
     flex: 50%;
     display: flex;
+}
+
+.modal__wrap .body img {
+    height: 50%;
+    width: 100%;
 }
 
 .modal__wrap .about {
@@ -49,9 +53,9 @@
 }
 
 .highlights {
-    column-count: 2;
-    margin-top: 1.1rem;
     text-align: center;
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
 }
 
 .modal__container .footer {

@@ -2,18 +2,18 @@ import React from 'react';
 import { useState } from 'react';
 import './portfolio.css';
 import {ModalOne, ModalTwo, ModalThree, ModalFour} from '../modals/Modal';
-import IMG1 from '../../assets/images/projects/search-books-ss.png';
+import IMG1 from '../../assets/images/projects/maecenas-devs.png';
 import IMG2 from '../../assets/images/projects/budget-tracker.png';
-import IMG3 from '../../assets/images/projects/maecenas-devs.png';
+import IMG3 from '../../assets/images/projects/search-books-ss.png';
 import IMG4 from '../../assets/images/projects/tech-blog.png';
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'Book Search Engine',
-    github: 'https://github.com/andrewyk99/book-search-engine',
-    demo: 'https://salty-sea-41217.herokuapp.com/'
+    title: 'Maecenas Devs',
+    github: 'https://github.com/andrewyk99/Maecenas-Devs',
+    demo: 'https://gentle-citadel-11319.herokuapp.com/'
   },
   {
     id: 2,
@@ -25,9 +25,9 @@ const data = [
   {
     id: 3,
     image: IMG3,
-    title: 'Maecenas Devs',
-    github: 'https://github.com/andrewyk99/Maecenas-Devs',
-    demo: 'https://gentle-citadel-11319.herokuapp.com/'
+    title: 'Book Search Engine',
+    github: 'https://github.com/andrewyk99/book-search-engine',
+    demo: 'https://salty-sea-41217.herokuapp.com/'
   },
   {
     id: 4,
