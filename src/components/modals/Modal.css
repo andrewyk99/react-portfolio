@@ -17,8 +17,8 @@
 
 .modal__container {
     position: fixed;
-    width: 700px;
-    height: 700px;
+    width: 50rem;
+    height: 50rem;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -84,4 +84,20 @@
 
 .modal__btn {
     background-color: var(--color-bg);
+}
+
+/* ============================ Media Queries (Medium Devices) ============================ */
+@media screen and (max-width: 1024px) {
+    .modal__container {
+        width: 45rem;
+        height: 45rem;
+    }
+}
+
+/* ============================ Media Queries (Small Devices) ============================ */
+@media screen and (max-width: 600px) {
+    .modal__container {
+        width: 25rem;
+        height: 35rem;
+    }
 }
