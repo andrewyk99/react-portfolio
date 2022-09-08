@@ -27,14 +27,16 @@ const About = () => {
             <article className='about__card'>
               <VscFolderActive className='about__icon'/>
               <h5>Projects</h5>
-              <small>20+ Completed</small>
+              <small>30+ Completed</small>
             </article>
           </div>
 
           <p>
             Hello there! I am a fullstack web developer, recently certified by the University of Texas at Austin's coding boot camp.
-            I have worked on and completed more than 20 projects and three group projects that involved front end, backend, and fullstack applications.
-            I am well versed in HTML, CSS, and JavaScript.
+            I have worked on and completed more than 30 projects and three group projects that involved front end, backend, and fullstack applications.
+            I developed skills increating responsive web design, JavaScript, React, and backend databases such as MongoDB and MySQL.
+            Known to be organized and detail oriented, focusing on developing applications that give a consistent user experience. My aim is to create
+            purposeful applications with features the user expects, as well as user friendly details that create a more fluid experience.
           </p>
 
           <a href='#contact' class='btn btn-primary'>Let's Talk</a>
