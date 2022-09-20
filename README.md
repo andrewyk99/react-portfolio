@@ -11,7 +11,19 @@ A React.js project portfolio that shows off my projects, how to contact me, skil
 
 ## Website
 Here is a link to the live website:
-[Andrew's Portfolio](https://andrewyk99.github.io/react-portfolio/)
+[Andrew's Portfolio](https://andrewyk99.github.io/react-portfolio/).
+
+![screenshot of homepage](./src/assets/images/screenshots/homepage.png?raw=true "Homepage")
+Screenshot of the Landing Page
+
+![screenshot of about me](.src/assets/images/screenshots/about_me.png?raw=true "About Me")
+Screenshot of the About Me Section
+
+![screenshot of my skills](.src/assets/images/screenshots/skills.png?raw=true "Skills")
+Screenshot of my Skills
+
+![screenshot of the contact form](.src/assets/images/screenshots/contact.png?raw=true "Contact Form")
+Screenshot of the Contact Form
 
 ## Contributors
 [Andrew Kim](https://github.com/andrewyk99)
