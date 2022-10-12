@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.e4f571bc.css",
-    "main.js": "/react-portfolio/static/js/main.adf34328.js",
+    "main.css": "/react-portfolio/static/css/main.533fb0a0.css",
+    "main.js": "/react-portfolio/static/js/main.a68d0360.js",
+    "static/media/weather-pwa.png": "/react-portfolio/static/media/weather-pwa.827d2799bd4e759ff195.png",
     "static/media/maecenas-devs.png": "/react-portfolio/static/media/maecenas-devs.93795bf69e8e7cfa1661.png",
     "static/media/me3-removebg-preview.png": "/react-portfolio/static/media/me3-removebg-preview.efe4870aa7ffcc5dcd02.png",
     "static/media/about_me.jpg": "/react-portfolio/static/media/about_me.d48368c03549f192960f.jpg",
     "static/media/Resume.pdf": "/react-portfolio/static/media/Resume.76e8453cb4cadbbb08b5.pdf",
     "static/media/budget-tracker.png": "/react-portfolio/static/media/budget-tracker.45621ad13922beb51f41.png",
     "static/media/work-day-scheduler-ss.png": "/react-portfolio/static/media/work-day-scheduler-ss.2a8752aab6f50f140429.png",
+    "static/media/taskmaster-pro.png": "/react-portfolio/static/media/taskmaster-pro.fe3b040806cb5a2cf3c0.png",
     "static/media/tech-blog.png": "/react-portfolio/static/media/tech-blog.588a45d08875ca99cabd.png",
     "index.html": "/react-portfolio/index.html",
-    "main.e4f571bc.css.map": "/react-portfolio/static/css/main.e4f571bc.css.map",
-    "main.adf34328.js.map": "/react-portfolio/static/js/main.adf34328.js.map"
+    "main.533fb0a0.css.map": "/react-portfolio/static/css/main.533fb0a0.css.map",
+    "main.a68d0360.js.map": "/react-portfolio/static/js/main.a68d0360.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4f571bc.css",
-    "static/js/main.adf34328.js"
+    "static/css/main.533fb0a0.css",
+    "static/js/main.a68d0360.js"
   ]
 }
