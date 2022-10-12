@@ -29,6 +29,7 @@
 
 .modal__wrap {
     overflow: scroll;
+    padding-bottom: 2rem;
 }
 
 .modal__wrap .title {

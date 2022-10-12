@@ -104,6 +104,11 @@ a:hover {
     color: var(--color-bg);
 }
 
+.btn-primary:focus {
+    background: none;
+    border-color: none;
+}
+
 img {
     display: block;
     width: 100%;

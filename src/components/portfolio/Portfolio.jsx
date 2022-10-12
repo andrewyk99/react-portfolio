@@ -1,11 +1,13 @@
 import React from 'react';
 import { useState } from 'react';
 import './portfolio.css';
-import {ModalOne, ModalTwo, ModalThree, ModalFour} from '../modals/Modal';
+import {ModalOne, ModalTwo, ModalThree, ModalFour, ModalFive, ModalSix} from '../modals/Modal';
 import IMG1 from '../../assets/images/projects/maecenas-devs.png';
 import IMG2 from '../../assets/images/projects/budget-tracker.png';
 import IMG3 from '../../assets/images/projects/work-day-scheduler-ss.png';
 import IMG4 from '../../assets/images/projects/tech-blog.png';
+import IMG5 from '../../assets/images/projects/taskmaster-pro.png';
+import IMG6 from '../../assets/images/projects/weather-pwa.png';
 
 const data = [
   {
@@ -35,6 +37,20 @@ const data = [
     title: 'Tech Blog',
     github: 'https://github.com/andrewyk99/tech-blog',
     demo: 'https://lit-lake-35991.herokuapp.com/'
+  },
+  {
+    id: 5,
+    image: IMG5,
+    title: 'Taskmaster Pro',
+    github: 'https://github.com/andrewyk99/taskmaster-pro',
+    demo: 'https://andrewyk99.github.io/taskmaster-pro/'
+  },
+  {
+    id: 6,
+    image: IMG6,
+    title: 'Weather PWA App',
+    github: 'https://github.com/andrewyk99/weather-app',
+    demo: 'https://cozy-sorbet-7e78b1.netlify.app/'
   }
 ]
 
@@ -43,6 +59,8 @@ const Portfolio = () => {
   const [openModalTwo, setModalTwo] = useState(false)
   const [openModalThree, setModalThree] = useState(false)
   const [openModalFour, setModalFour] = useState(false)
+  const [openModalFive, setModalFive] = useState(false)
+  const [openModalSix, setModalSix] = useState(false)
   const body = document.body;
 
   return (
@@ -118,12 +136,48 @@ const Portfolio = () => {
             </div>
           </button>
         </div>
+
+        {/* Project 5 */}
+        <div>
+          <button className='portfolio__item' onClick={() => {
+            setModalFive(true);
+            body.style.overflowY = 'hidden';
+          }}>
+            <div className="portfolio__item-image">
+              <img src={data[4].image} alt={data[4].title} />
+            </div>
+            <h3>{data[4].title}</h3>
+            <div className="portfolio__item-cta">
+              <a href={data[4].github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
+              <a href={data[4].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </button>
+        </div>
+
+        {/* Project 6 */}
+        <div>
+          <button className='portfolio__item' onClick={() => {
+            setModalSix(true);
+            body.style.overflowY = 'hidden';
+          }}>
+            <div className="portfolio__item-image">
+              <img src={data[5].image} alt={data[5].title} />
+            </div>
+            <h3>{data[5].title}</h3>
+            <div className="portfolio__item-cta">
+              <a href={data[5].github} className='btn' target='_blank' rel="noopener noreferrer">GitHub</a>
+              <a href={data[5].demo} className='btn btn-primary' target='_blank' rel="noopener noreferrer">Live Demo</a>
+            </div>
+          </button>
+        </div>
       </div>
 
       {openModalOne && <ModalOne closeModalOne={setModalOne} />}
       {openModalTwo && <ModalTwo closeModalTwo={setModalTwo} />}
       {openModalThree && <ModalThree closeModalThree={setModalThree} />}
       {openModalFour && <ModalFour closeModalFour={setModalFour} />}
+      {openModalFive && <ModalFive closeModalFive={setModalFive} />}
+      {openModalSix && <ModalSix closeModalSix={setModalSix} />}
     </section>
   )
 }

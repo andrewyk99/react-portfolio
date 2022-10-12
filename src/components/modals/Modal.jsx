@@ -4,6 +4,8 @@ import IMG1 from '../../assets/images/projects/maecenas-devs.png';
 import IMG2 from '../../assets/images/projects/budget-tracker.png';
 import IMG3 from '../../assets/images/projects/work-day-scheduler-ss.png';
 import IMG4 from '../../assets/images/projects/tech-blog.png';
+import IMG5 from '../../assets/images/projects/taskmaster-pro.png';
+import IMG6 from '../../assets/images/projects/weather-pwa.png';
 
 const data = [
     {
@@ -33,6 +35,20 @@ const data = [
       title: 'Tech Blog',
       github: 'https://github.com/andrewyk99/tech-blog',
       demo: 'https://lit-lake-35991.herokuapp.com/'
+    },
+    {
+      id: 5,
+      image: IMG5,
+      title: 'Taskmaster Pro',
+      github: 'https://github.com/andrewyk99/taskmaster-pro',
+      demo: 'https://andrewyk99.github.io/taskmaster-pro/'
+    },
+    {
+      id: 6,
+      image: IMG6,
+      title: 'Weather PWA App',
+      github: 'https://github.com/andrewyk99/weather-app',
+      demo: 'https://cozy-sorbet-7e78b1.netlify.app/'
     }
 ]
 
@@ -253,4 +269,110 @@ function ModalFour({ closeModalFour }) {
 }
 // End of Project 4
 
-export {ModalOne, ModalTwo, ModalThree, ModalFour};
+function ModalFive({ closeModalFive }) {
+  return (
+    <div className='modal'>
+      <div className="modal__background" onClick={() => {
+          closeModalFive(false);
+          const body = document.body;
+          body.style.overflowY = '';
+        }}></div>
+      <div className='modal__container'>
+        <div className="modal__wrap">
+          {/* Title */}
+          <div className='title'>
+              <h1>{data[4].title}</h1>
+          </div>
+
+          {/* Image */}
+          <div className='body'>
+              <img src={data[4].image} alt={data[4].title} />
+          </div>
+
+          {/* About */}
+          <div className='about'>
+            <p>A front end to-do application that allows the user to create tasks with a description as well as a due date. They then can choose how to manage their tasks by dragging and dropping each task.</p>
+            <div className='highlights row'>
+              <div className='col center-align'>
+                <h2>Highlights:</h2>
+                <li>Completely front end</li>
+                <li>Use of CSS framework Bootstrap</li>
+                <li>Use of jQuery to manage color coding depending on the date</li>
+              </div>
+              <div className='col center-align'>
+                <h2>Tools Used:</h2>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Bootstrap</li>
+                <li>jQuery</li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className='footer'>
+          <a href={data[4].github} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+          <a href={data[4].demo} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+        </div>
+      </div>
+    </div>
+  )
+}
+// End of Project 5
+
+function ModalSix({ closeModalSix }) {
+  return (
+    <div className='modal'>
+      <div className="modal__background" onClick={() => {
+          closeModalSix(false);
+          const body = document.body;
+          body.style.overflowY = '';
+        }}></div>
+      <div className='modal__container'>
+        <div className="modal__wrap">
+          {/* Title */}
+          <div className='title'>
+              <h1>{data[5].title}</h1>
+          </div>
+
+          {/* Image */}
+          <div className='body'>
+              <img src={data[5].image} alt={data[5].title} />
+          </div>
+
+          {/* About */}
+          <div className='about'>
+            <p>A React.js Weather App that meets PWA requirements. It is a simple app that allows the user to search any city they want to know the current weather conditions of. Being a PWA, users can also install the app and access it offline.</p>
+            <div className='highlights row'>
+              <div className='col center-align'>
+                <h2>Highlights:</h2>
+                <li>Meets all PWA requirements</li>
+                <li>Use of OpenWeatherMap API</li>
+                <li>Gives live weather information</li>
+              </div>
+              <div className='col center-align'>
+                <h2>Tools Used:</h2>
+                <li>React.js</li>
+                <li>CSS</li>
+                <li>OpenWeatherMap API</li>
+                <li>React Axios</li>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer */}
+        <div className='footer'>
+          <a href={data[5].github} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>GitHub Repo</a>
+          <a href={data[5].demo} className='btn modal__btn' target='_blank' rel='noopener noreferrer'>Live Demo</a>
+        </div>
+      </div>
+    </div>
+  )
+}
+// End of Project 6
+
+
+export {ModalOne, ModalTwo, ModalThree, ModalFour, ModalFive, ModalSix};

@@ -2,6 +2,20 @@
     width: 60%;
 }
 
+.contact__me {
+    margin-bottom: 0.5rem;
+}
+
+.email__at {
+    margin-bottom: 3rem;
+}
+
+.email {
+    display: inline;
+    vertical-align: top;
+    color: var(--color-white)
+}
+
 form {
     display: flex;
     flex-direction: column;
