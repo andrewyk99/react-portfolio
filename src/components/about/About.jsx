@@ -34,7 +34,7 @@ const About = () => {
           <p>
             Hello there! I am a fullstack web developer, recently certified by the University of Texas at Austin's coding boot camp.
             I have worked on and completed more than 30 projects and three group projects that involved front end, backend, and fullstack applications.
-            I developed skills increating responsive web design, JavaScript, React, and backend databases such as MongoDB and MySQL.
+            I developed skills in creating responsive web design, JavaScript, React, and backend databases such as MongoDB and MySQL.
             Known to be organized and detail oriented, focusing on developing applications that give a consistent user experience. My aim is to create
             purposeful applications with features the user expects, as well as user friendly details that create a more fluid experience.
           </p>
